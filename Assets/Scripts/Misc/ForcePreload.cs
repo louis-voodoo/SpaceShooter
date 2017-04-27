@@ -6,7 +6,8 @@ namespace EmptyGame.Misc {
 	public class ForcePreload : MonoBehaviour {
 
 		private void Awake() {
-			SceneManager.LoadScene(0);
+			if (FindObjectOfType<Preload>() == null)
+				SceneManager.LoadScene(0);
 		}
 
 	}
