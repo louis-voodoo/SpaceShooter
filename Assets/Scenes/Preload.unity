@@ -147,6 +147,7 @@ Transform:
   m_Children:
   - {fileID: 1852282046}
   - {fileID: 1609288952}
+  - {fileID: 314525177}
   - {fileID: 745925963}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -203,6 +204,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad1304379c69cc47bf2adce8218db17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &314525176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 314525177}
+  - component: {fileID: 314525178}
+  m_Layer: 0
+  m_Name: '@LeanTouch'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &314525177
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314525176}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 134204218}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &314525178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314525176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc98219a83dff145947365dc914d06e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TapThreshold: 0.5
+  SwipeThreshold: 50
+  ReferenceDpi: 200
+  GuiLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  RecordFingers: 1
+  RecordThreshold: 5
+  RecordLimit: 10
+  SimulateMultiFingers: 1
+  PinchTwistKey: 306
+  MultiDragKey: 308
+  FingerTexture: {fileID: 2800000, guid: 25c48be3a87ea0f489a6d41c9c9a2194, type: 3}
 --- !u!1 &745925961
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,61 +295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 134204218}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1345230290
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 165288, guid: a9d27d37bab3c447b8eb7a2a6756e952, type: 2}
-  m_PrefabInternal: {fileID: 1739704369}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1345230293}
-  - component: {fileID: 1345230292}
-  - component: {fileID: 1345230291}
-  m_Layer: 0
-  m_Name: GameAnalytics
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1345230291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11465288, guid: a9d27d37bab3c447b8eb7a2a6756e952,
-    type: 2}
-  m_PrefabInternal: {fileID: 1739704369}
-  m_GameObject: {fileID: 1345230290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1488bee7925fe433fbddf989c50ad4ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1345230292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11465290, guid: a9d27d37bab3c447b8eb7a2a6756e952,
-    type: 2}
-  m_PrefabInternal: {fileID: 1739704369}
-  m_GameObject: {fileID: 1345230290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adefe18d2f40dd84c8666cc766d5de82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1345230293
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 465288, guid: a9d27d37bab3c447b8eb7a2a6756e952, type: 2}
-  m_PrefabInternal: {fileID: 1739704369}
-  m_GameObject: {fileID: 1345230290}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609288950
 GameObject:
@@ -378,7 +378,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9d27d37bab3c447b8eb7a2a6756e952, type: 2}
-  m_RootGameObject: {fileID: 1345230290}
   m_IsPrefabParent: 0
 --- !u!1 &1852282044
 GameObject:
