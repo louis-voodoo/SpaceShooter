@@ -2,13 +2,10 @@
 using UnityEngine.SceneManagement;
 
 namespace EmptyGame.Misc {
-
 	public class Preload : MonoBehaviour {
-
 		private void Awake() {
-			SceneManager.LoadScene(1);
+			if (SceneManager.sceneCount == 1)
+				SceneManager.LoadScene(1);
 		}
-
 	}
-
 }
