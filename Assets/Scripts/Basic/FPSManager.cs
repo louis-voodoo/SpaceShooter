@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class FramerateSetter : MonoBehaviour {
+public class FPSManager : MonoBehaviour {
 
 	private void Awake() {
 		Application.targetFrameRate = 60;
