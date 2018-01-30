@@ -86,12 +86,16 @@ namespace VoodooSauceInternal {
 
 		private void InitFacebook() {
 			string appId = FacebookSettings.AppId;
-			
-			if (string.IsNullOrEmpty(appId)) 
-				throw new Exception("FacebookSettings AppId is empty. Please fill it in menu Facebook > Edit Settings > AppId");
+
+			if (string.IsNullOrEmpty(appId)) {
+				Debug.LogWarning("FacebookSettings AppId is empty. Please fill it in menu Facebook > Edit Settings > AppId");
+				return;
+			}
 			if (appId.Equals("0") || appId.Equals("157578437735213") ||
-			    appId.Equals("146810152723342") && !Application.productName.Equals("VoodooSauce"))
-				throw new Exception("FacebookSettings AppId has not been changed. Please change it in menu Facebook > Edit Settings > AppId");
+			    appId.Equals("146810152723342") && !Application.productName.Equals("VoodooSauce")) {
+				Debug.LogWarning("FacebookSettings AppId has not been changed. Please change it in menu Facebook > Edit Settings > AppId");
+				return;
+			}
 
 			Debug.Log("Initializing Facebook...");
 			FB.Init(() => Debug.Log("Facebook Initialized"));

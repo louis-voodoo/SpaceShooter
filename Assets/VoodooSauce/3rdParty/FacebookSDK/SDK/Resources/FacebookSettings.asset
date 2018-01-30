@@ -15,7 +15,7 @@ MonoBehaviour:
   clientTokens:
   - 
   appIds:
-  - 146810152723342
+  - 1
   appLabels:
   - VoodooSauce Test App
   cookie: 1
