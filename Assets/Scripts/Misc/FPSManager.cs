@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace EmptyGame.Misc {
+namespace Misc {
 
 	public class FPSManager : MonoBehaviour {
 

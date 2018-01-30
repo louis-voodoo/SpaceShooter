@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using UnityEngine;
 
-namespace EmptyGame.Misc {
+namespace Misc {
 
 	public class ScreenshotController : MonoBehaviour {
 #if UNITY_EDITOR
@@ -19,7 +19,7 @@ namespace EmptyGame.Misc {
 		void Update() {
 			if (Input.GetMouseButtonDown(1)) {
 				string screenshotName = ScreenshotFolder + "/Screenshot_" + count++ + ".png";
-				Application.CaptureScreenshot(screenshotName);
+				ScreenCapture.CaptureScreenshot(screenshotName);
 				Debug.Log("Saved screenshot : \"" + screenshotName + "\"");
 			}
 		}
