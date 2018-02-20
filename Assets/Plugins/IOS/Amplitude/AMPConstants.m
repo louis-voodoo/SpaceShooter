@@ -19,7 +19,7 @@ const int kAMPEventMaxCount = 100;
 NSString *const kAMPPlatform = @"tvOS";
 NSString *const kAMPOSName = @"tvos";
 #else  // iOS
-const int kAMPEventUploadThreshold = 30;
+const int kAMPEventUploadThreshold = 0;//30;
 const int kAMPEventMaxCount = 1000;
 NSString *const kAMPPlatform = @"iOS";
 NSString *const kAMPOSName = @"ios";
@@ -27,8 +27,8 @@ NSString *const kAMPOSName = @"ios";
 
 const int kAMPEventUploadMaxBatchSize = 100;
 const int kAMPEventRemoveBatchSize = 20;
-const int kAMPEventUploadPeriodSeconds = 30; // 30s
-const long kAMPMinTimeBetweenSessionsMillis = 5 * 60 * 1000; // 5m
+const int kAMPEventUploadPeriodSeconds = 0; //30; // 30s
+const long kAMPMinTimeBetweenSessionsMillis = 5;// * 60 * 1000; // 5m
 const int kAMPMaxStringLength = 1024;
 const int kAMPMaxPropertyKeys = 1000;
 

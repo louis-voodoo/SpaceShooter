@@ -19,5 +19,10 @@ namespace VoodooSauceInternal {
 
         [Tooltip("Your GameAnalytics Android Secret Key - copy/paste from the GA website")]
         public string GameAnalyticsAndroidSecretKey;
+
+		[Header("Amlpitude")]
+		
+		[Tooltip("Your Amplitude API key for your project")]
+		public string AmplitudeApiKey;
 	}
 }

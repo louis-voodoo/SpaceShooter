@@ -39,6 +39,7 @@ namespace VoodooSauceInternal {
 
 			InitGameAnalytics();
 			InitFacebook();
+			InitAmplitude();
 
 			VoodooAnalytics.OnApplicationStarted();
 		}
@@ -99,6 +100,18 @@ namespace VoodooSauceInternal {
 
 			Debug.Log("Initializing Facebook...");
 			FB.Init(() => Debug.Log("Facebook Initialized"));
+		}
+
+		private void InitAmplitude() {
+			if (string.IsNullOrEmpty(_settings.AmplitudeApiKey)) {
+				Debug.Log("VoodooSauce Settings is missing Amplitude API key! Go to Resources/VoodooSettings and set it.");
+				return;
+			}
+			
+			Debug.Log("Initializing Amplitude with API key : " + _settings.AmplitudeApiKey);
+			Amplitude.Instance.logging = true;
+			Amplitude.Instance.trackSessionEvents(true);
+			Amplitude.Instance.init(_settings.AmplitudeApiKey);
 		}
 
 		private void Start()
