@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: defa72c9f39dc4a6f8a12b1c1348b243, type: 3}
+  m_Name: Randomized1
+  m_EditorClassIdentifier: 
+  PatternExtents: {x: 50, y: 30}
+  Elements:
+  - Pos: {x: -41, y: 0}
+    Element: {fileID: 0}
+    IsCollectible: 0
+    RopeLength: 9
+  - Pos: {x: 42, y: 0}
+    Element: {fileID: 0}
+    IsCollectible: 0
+    RopeLength: 8
+  - Pos: {x: -16.658972, y: 1.5086994}
+    Element: {fileID: 0}
+    IsCollectible: 0
+    RopeLength: 8
+  - Pos: {x: 9.491524, y: 2.4776878}
+    Element: {fileID: 0}
+    IsCollectible: 0
+    RopeLength: 8
+  - Pos: {x: 28.61, y: -0.06248331}
+    Element: {fileID: 0}
+    IsCollectible: 0
+    RopeLength: 7
+  RandomlyGenerated: 1
+  MinMaxXDistance: {x: 10, y: 20}
+  MinMaxYDistance: {x: -5, y: 5}
+  MinMaxRopeLength: {x: 5, y: 10}
+  MinMaxCollectibles: {x: 0, y: 2}

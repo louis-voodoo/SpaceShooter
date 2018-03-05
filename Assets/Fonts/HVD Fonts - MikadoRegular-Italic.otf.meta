@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 8e389bd55e6fa4e04b3139b78c27c554
+timeCreated: 1508944002
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mikado
+  fontNames:
+  - Mikado
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4e848a409251a43cd9aff5d89c16263d, type: 3}
+  - {fileID: 12800000, guid: 7fc5ca823c3c340dda8fe3c6f5f6e229, type: 3}
+  - {fileID: 12800000, guid: 72f75bbe09a304f0681d3e316e55e9a8, type: 3}
+  - {fileID: 12800000, guid: 2eb9dddf437924d368ee0fff0414b55b, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
